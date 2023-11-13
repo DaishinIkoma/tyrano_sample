@@ -5,6 +5,7 @@
 [wait time=200]
 [freeimage layer="base"]
 
+[cm]
 ある朝、公園にて男の死体が発見された。[l][r]
 [r]
 どうやら、容疑者は三人いるようだ。[l][r]
@@ -18,13 +19,16 @@
 
 [cm]
 
+[bg storage=tantei_boy.png time=500]
 何をする？[r]
 [r]
 [link target=*tag_higaisya] →被害者の様子を調べる [endlink][r]
 [link target=*tag_yougisya1] →一人目の容疑者の話を聞く [endlink][r]
 [link target=*tag_yougisya2] →二人目の容疑者の話を聞く [endlink][r]
 [link target=*tag_yougisya3] →三人目容疑者の話を聞く [endlink][r]
+[link target=*tag_suiri] →推理を行う [endlink][r]
 [s]
+
 *tag_higaisya
 
 [cm]
@@ -33,7 +37,7 @@
 
 被害者は21才の男性だ。[l][r]
 [r]
-凶器はそばに落ちている岩であり、頭の右側に打撲痕があるようだ。[r]
+凶器は鈍器のようであり、であり、頭の右側に打撲痕があるようだ。[r]
 [r]
 死亡推定時刻は昨夜22時から23時の間である。[r]
 [r]
@@ -41,15 +45,69 @@
 [link target=*tag_main] →戻る [endlink][r]
 [s]
 
-
-*tag_run
-
-[bg storage=run.jpg time=500]
-
+*tag_yougisya1
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
 
-【 GOOD END 】[l][cm]
+[bg storage=line_keepout.png time=500]
 
-[jump target=*start]
+この人は、被害者と同級生の男性だ。[l][r]
+[r]
+右腕に腕時計をしている。[r]
+[r]
+昨晩は21時までサークル活動をしたのち、帰宅している。[r]
+[r]
+必要な情報は以上だ。[r]
+[link target=*tag_main] →戻る [endlink][r]
+[s]
+
+*tag_yougisya1
+[cm]
+
+[bg storage=line_keepout.png time=500]
+
+この人は、被害者の先輩である男性だ。[l][r]
+[r]
+野球部のようで、左手用のグローブを持っていた。[r]
+[r]
+昨晩は22時まで野球の練習をし、その後帰宅したいる。[r]
+[r]
+必要な情報は以上だ。[r]
+[link target=*tag_main] →戻る [endlink][r]
+[s]
+
+*tag_yougisya3
+[cm]
+
+[bg storage=line_keepout.png time=500]
+
+この人は、被害者と同級生の女性だ。[l][r]
+[r]
+食事をとっている様子を見ると右手で箸を持っていた。[r]
+[r]
+昨晩は23時までバイトをしていたようだ。[r]
+[r]
+必要な情報は以上だ。[r]
+[link target=*tag_main] →戻る [endlink][r]
+[s]
+
+
+*tag_suiri
+[cm]
+さあ、犯人はだれだろうか。[r]
+[r]
+[link target=*tag_matigai] →一人目の容疑者 [endlink][r]
+[link target=*tag_seikai] →二人目の容疑者 [endlink][r]
+[link target=*tag_matigai] →三人目容疑者 [endlink][r]
+[s]
+
+*tag_matigai
+[cm]
+残念、外れだ[r]
+[link target=*tag_suiri] →もう一度推理を行う [endlink][r]
+[s]
+
+*tag_seikai
+[cm]
+おめでとう、犯人を特定することができた[r]
+[jump target=*start]→最初に戻る
+[s]
