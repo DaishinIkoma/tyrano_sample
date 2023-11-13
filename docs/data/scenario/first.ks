@@ -1,37 +1,46 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="探偵ゲーム"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
-
-メロスは激怒した。[l][r]
-
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
-
-(中略)[l][r]
-
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
-
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+ある朝、公園にて男の死体が発見された。[l][r]
+[r]
+どうやら、容疑者は三人いるようだ。[l][r]
+[r]
+あなたは探偵だ。三人の中から犯人を見つけ出そう。[l][r]
+[r]
+[link target=*tag_main] →ゲームスタート [endlink][r]
 [s]
 
-*tag_sleep
+*tag_main
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+何をする？[r]
+[r]
+[link target=*tag_higaisya] →被害者の様子を調べる [endlink][r]
+[link target=*tag_yougisya1] →一人目の容疑者の話を聞く [endlink][r]
+[link target=*tag_yougisya2] →二人目の容疑者の話を聞く [endlink][r]
+[link target=*tag_yougisya3] →三人目容疑者の話を聞く [endlink][r]
+[s]
+*tag_higaisya
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+[cm]
 
-【 BAD END 】[l][cm]
+[bg storage=line_keepout.png time=500]
 
-[jump target=*start]
+被害者は21才の男性だ。[l][r]
+[r]
+凶器はそばに落ちている岩であり、頭の右側に打撲痕があるようだ。[r]
+[r]
+死亡推定時刻は昨夜22時から23時の間である。[r]
+[r]
+必要な情報は以上だ。[r]
+[link target=*tag_main] →戻る [endlink][r]
+[s]
+
 
 *tag_run
 
