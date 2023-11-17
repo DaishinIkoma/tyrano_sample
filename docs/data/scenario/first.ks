@@ -6,6 +6,7 @@
 [freeimage layer="base"]
 
 [cm]
+[bg storage=body_zugaikotsu.png time=500]
 ある朝、公園にて男の死体が発見された。[l][r]
 [r]
 どうやら、容疑者は三人いるようだ。[l][r]
@@ -33,7 +34,7 @@
 
 [cm]
 
-[bg storage=line_keepout.png time=500]
+[bg storage=body_zugaikotsu_skull.png time=500]
 
 被害者は21才の男性だ。[l][r]
 [r]
@@ -48,7 +49,7 @@
 *tag_yougisya1
 [cm]
 
-[bg storage=line_keepout.png time=500]
+[bg storage=figure_fashion_color_blue.png time=500]
 
 この人は、被害者と同級生の男性だ。[l][r]
 [r]
@@ -60,10 +61,10 @@
 [link target=*tag_main] →戻る [endlink][r]
 [s]
 
-*tag_yougisya1
+*tag_yougisya2
 [cm]
 
-[bg storage=line_keepout.png time=500]
+[bg storage=figure_fashion_color_green.png time=500]
 
 この人は、被害者の先輩である男性だ。[l][r]
 [r]
@@ -78,7 +79,7 @@
 *tag_yougisya3
 [cm]
 
-[bg storage=line_keepout.png time=500]
+[bg storage=figure_fashion_color_red.png time=500]
 
 この人は、被害者と同級生の女性だ。[l][r]
 [r]
@@ -93,21 +94,24 @@
 
 *tag_suiri
 [cm]
+[bg storage=tantei_hannin.png time=500]
 さあ、犯人はだれだろうか。[r]
 [r]
 [link target=*tag_matigai] →一人目の容疑者 [endlink][r]
 [link target=*tag_seikai] →二人目の容疑者 [endlink][r]
-[link target=*tag_matigai] →三人目容疑者 [endlink][r]
+[link target=*tag_matigai] →三人目の容疑者 [endlink][r]
 [s]
 
 *tag_matigai
 [cm]
+[bg storage=character_program_shock.png time=500]
 残念、外れだ[r]
 [link target=*tag_suiri] →もう一度推理を行う [endlink][r]
 [s]
 
 *tag_seikai
 [cm]
-おめでとう、犯人を特定することができた[r]
+[bg storage=goal_figure.png time=500]
+おめでとう、犯人を特定することができた [l][r]
 [jump target=*start]→最初に戻る
 [s]
