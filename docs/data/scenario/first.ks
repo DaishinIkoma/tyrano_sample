@@ -38,7 +38,7 @@
 
 被害者は21才の男性だ。[l][r]
 [r]
-凶器は鈍器のようであり、であり、頭の右側に打撲痕があるようだ。[r]
+凶器は鈍器のようであり、前から殴られたらしい。前から見て右側に打撲痕がある。[r]
 [r]
 死亡推定時刻は昨夜22時から23時の間である。[r]
 [r]
@@ -70,7 +70,7 @@
 [r]
 野球部のようで、左手用のグローブを持っていた。[r]
 [r]
-昨晩は22時まで野球の練習をし、その後帰宅したいる。[r]
+昨晩は22時まで野球の練習をし、その後帰宅している。[r]
 [r]
 必要な情報は以上だ。[r]
 [link target=*tag_main] →戻る [endlink][r]
@@ -100,6 +100,7 @@
 [link target=*tag_matigai] →一人目の容疑者 [endlink][r]
 [link target=*tag_seikai] →二人目の容疑者 [endlink][r]
 [link target=*tag_matigai] →三人目の容疑者 [endlink][r]
+[link target=*tag_main] →もう一度話を聞く [endlink][r]
 [s]
 
 *tag_matigai
@@ -113,5 +114,15 @@
 [cm]
 [bg storage=goal_figure.png time=500]
 おめでとう、犯人を特定することができた [l][r]
-[jump target=*start]→最初に戻る
+[link target=*tag_kaisetsu]→解説を見る　[endlink][r]
+[link target=*start]→最初に戻る　[endlink][r]
+[s]
+
+*tag_kaisetsu
+[cm]
+[bg storage=job_teacher_man.png time=500]
+前から見て右側に打撲痕がある。前から殴られたので、犯人は右利きだ。[l][r]
+また、死亡推定時刻より犯人は22時から23時のアリバイがない。[l][r]
+これらを満たすのは、二人目の容疑者のみである。[l][r]
+[link target=*start]→最初に戻る　[endlink][r]
 [s]
